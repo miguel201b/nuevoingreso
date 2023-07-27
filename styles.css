@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 40px 40px; /* Aquí he cambiado el valor de "margin" */
+    padding: 0;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a37;
+    color: #fff;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.titleContainer {
+    flex-grow: 1;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Estilos para el menú de navegación */
+.navbar {
+    background-color: #fab828;
+    display: flex;
+    align-items: center;
+    padding: 14px 16px;
+}
+
+.menu-icon {
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+/* Estilos para los enlaces del navbar */
+.navbar a {
+    color: #1a1a37; /* Cambia este valor al color deseado para las letras por defecto */
+    text-decoration: none;
+    padding: 14px 16px;
+    font-weight: bold; /* Añade esta propiedad para hacer las letras más gruesas */
+    transition: background-color 0.3s;
+}
+
+/* Estilos para los enlaces del navbar al pasar el cursor sobre ellos */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black; /* Cambia este valor al color deseado para las letras al pasar el cursor */
+}
+
+/* Estilos para el menú de navegación responsivo */
+@media screen and (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+    }
+    
+    .logo {
+        width: 80px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .menu-items {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar.active .menu-items {
+        display: flex;
+    }
+}

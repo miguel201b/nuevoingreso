@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="utf-8">
+    <title>Colegio de Ciencias y Humanidades Plantel Oriente | UNAM</title>
+
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="https://e7.pngegg.com/pngimages/150/139/png-clipart-direccion-general-de-cch-national-autonomous-university-of-mexico-oriente-gaceta-unam-organization-oriente.png" alt="Logo CCH-Oriente" class="logo">
+            <div class="titleContainer">
+                <h1>CCH-Oriente Proceso de inscripción para alumnos de nuevo ingreso</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Agrega un icono de menú (hamburguesa) solo visible en pantallas de celular -->
+    <div class="navbar">
+        <div class="menu-items" id="menuItems">
+            <a href="#inicio" onclick="showSection('inicio')">Inicio</a>
+            <a href="#infografias" onclick="showSection('infografias')">Infografías</a>
+            <a href="#videos" onclick="showSection('videos')">Videos</a>
+            <a href="#calendario" onclick="showSection('calendario')">Calendario</a>
+            <a href="#faq" onclick="showSection('faq')">FAQ</a>
+            <a href="#contacto" onclick="showSection('contacto')">Contacto</a>
+        </div>
+    </div>
+
+    <!-- Aquí van las demás secciones -->
+    <div class="section" id="inicio">
+        <h2>Bienvenido!</h2>
+    </div>
+
+    <div class="section" id="infografias">
+        <h2>Infografías!</h2>
+    </div>
+
+    <div class="section" id="videos">
+        <h2>Videos!</h2>
+    </div>
+
+    <div class="section" id="faq">
+        <h2>FAQ!</h2>
+    </div>
+
+
+    <div class="section" id="calendario">
+        <h2>Sección de Calendario</h2>
+        <div id="calendario">
+            <!-- Días del calendario -->
+            <div class="dia">
+                19 de Agosto
+                <div class="evento">
+                    <h3>Ceremonia de Bienvenida</h3>
+                    <ul>
+                        <li>10:00 - Para los alumnos cuyo primer apellido empieza con las letras A-C</li>
+                        <li>12:00 - Para los alumnos cuyo primer apellido empieza con las letras D-G</li>
+                        <li>14:00 - Para los alumnos cuyo primer apellido empieza con las letras H-I</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Más días aquí -->
+        </div>
+    </div>
+
+    <div class="section" id="contacto">
+        <h2>Contacto!</h2>
+    </div>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
